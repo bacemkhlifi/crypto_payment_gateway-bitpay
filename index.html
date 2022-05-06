@@ -5,8 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>.form-center form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }</style>
 </head>
 <body>
+      <div class="form-center">
     <form action="https://test.bitpay.com/checkout" class="form-center" method="post">
         <input type="hidden" name="action" value="checkout" />
         <input type="hidden" name="posData" value="" />
@@ -14,5 +21,6 @@
         <input type="hidden" name="data" value="my1d2Tu2UeIcLKhvk0klAdQvGrEUWnLeO46E7T0Dg9h6ddR/laSDS5FMFCQoGnMk3623swTu8uk/ViuzT/QIOHkPY0V/ZbwDvlDA96EfK4q9i6bPSdjusZ0QfIVUPobzEp38QzYyksGY58KP5zi/tw==" />
         <input type="image" src="https://test.bitpay.com/cdn/en_US/bp-btn-pay-currencies.svg" name="submit" style="width: 210px" alt="BitPay, the easy way to pay with bitcoins.">
       </form>
+    </div>
 </body>
 </html>
